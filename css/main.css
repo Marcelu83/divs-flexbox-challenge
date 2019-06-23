@@ -97,42 +97,114 @@ textarea {
 
 
 html {
-  background-color: #000;
+    background:url('../img/oranges-back.jpg') repeat;
     height: 100%;
     width:100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   padding: 2em;
-  font-size: 1.25em;
+  font-size: 1.2em;
+  font-weight:700;
   height: 100%;
+  color:#fff;
+
+
 }
 
-.wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 500;
+
+header,
+footer {
+  background-color: rgb(61, 61, 41);
+  height:80px;
+  width:100%;
+  padding:2%;
+}
+
+header,
+footer,
+main {
   display:flex;
-  justify-content: space-between;
-  align-items:center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.div-1, .div-2, .div-3 {
+main {
+  background:rgb(61, 61, 41);
+  height:250px;
+  width:100%;
+  border-bottom: 2px solid white;
+  padding:2%;
+
+}
+
+
+h1 span { font-family: 'Oswald', sans-serif;
+font-size: 2.05em;
+
+}
+
+h2 span {font-family: 'Oswald', sans-serif;
+font-size: 1.2em;
+
+}
+
+h3 span {font-family: 'Oswald', sans-serif;
+font-size: 1em;
+
+}
+
+
+.flex-container{
+  /*add display:flex and set justify-content to space-between*/
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-flow:row wrap;
+  background-color: rgb(61, 61, 41);
+  opacity:0.8;
+}
+
+.flex-items {
+  /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  line-height: 1.5em;
+  background-color: rgb(61, 61, 41);
+  width: 20%;
+  height: 200px;
+
+}
+
+
+#div-1, #div-2, #div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
   line-height: 1.5em;
   font-size: 1em;
-  background-color: #000;
   height: 300px;
-  width:30%;
+  width:20%;
   display:flex;
   justify-content:center;
   align-items: center;
-  border-right:1px solid white;
-  padding:0 2%;
-
+  padding:0 6%;
+  border-right:2px groove white;
 
 }
+
+
+footer {border-top:2px groove white;
+
+}
+
+ul li {display:inline-block;
+  padding:0 2%;
+
+}
+
 
 
 
